@@ -5,5 +5,5 @@ pytest plugin to run tests by linenumber.
 Example:
 
 ```python
-foo/bar/baz.py:100
+foo/bar/baz.py::100
 ```
