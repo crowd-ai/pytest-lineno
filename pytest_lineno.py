@@ -33,6 +33,9 @@ class GetTargetClassOrFunction(ast.NodeVisitor):
       if isinstance(cnode, ast.FunctionDef):
         self._visit_node(cnode, parents=[node])
 
+  def visit_FunctionDef(self, node):
+    self._visit_node(node)
+
 
 @pytest.hookimpl(hook_wrapper=True)
 def pytest_cmdline_preparse(config, args):  # pylint: disable=unused-argument
