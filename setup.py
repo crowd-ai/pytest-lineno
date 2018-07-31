@@ -7,7 +7,7 @@ setup(
     name='pytest-lineno',
     description='pytest plugin to run tests by linenumber',
     long_description=open("README.md").read(),
-    version='1.0.1',
+    version='1.0.2',
     author='Aleks Kamko',
     author_email='aykamko@crowdai.com',
     url='https://github.com/crowd-ai/pytest-lineno',

@@ -37,7 +37,6 @@ class GetTargetClassOrFunction(ast.NodeVisitor):
     self._visit_node(node)
 
 
-@pytest.hookimpl(hookwrapper=True)
 def pytest_cmdline_preparse(config, args):  # pylint: disable=unused-argument
   """
   Converts linenumber args to proper pytest format, e.g file.py::Class::method
